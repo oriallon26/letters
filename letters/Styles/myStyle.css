@@ -1,0 +1,463 @@
+﻿header {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    /* background-color: yellowgreen; */
+    height: 108px;
+    background-color: white;
+    -webkit-box-shadow: 0px 7px 14px -9px rgb(0 0 0 / 80%);
+    box-shadow: 0px 7px 14px -9px rgb(0 0 0 / 80%);
+    -moz-box-shadow: 0px 7px 14px -9px rgb(0 0 0 / 80%);
+}
+
+/*nav{
+    padding:10px;
+}*/
+
+
+ul {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    /* background-color: yellowgreen; */
+    height: 108px;
+    background-color: white;
+    -webkit-box-shadow: 0px 7px 14px -9px rgb(0 0 0 / 80%);
+    box-shadow: 0px 7px 14px -9px rgb(0 0 0 / 80%);
+    -moz-box-shadow: 0px 7px 14px -9px rgb(0 0 0 / 80%);
+}
+
+li {
+    /* padding: 10px;*/
+    cursor: pointer;
+}
+
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+}
+
+nav ul li:hover ul {
+    /* padding:10px;*/
+    padding: 0;
+    display: block;
+    width: 150px;
+}
+
+    nav ul li:hover ul li:nth-child(1), nav ul li:hover ul li:nth-child(2) {
+        display: inline-block;
+    }
+
+    nav ul li:hover ul li:nth-child(1) {
+        border-right: solid black 1px;
+    }
+
+
+    nav ul li:hover ul li:nth-child(3) {
+        border-top: solid black 1px;
+    }
+
+
+    nav ul li:hover ul:before {
+        bottom: 100%;
+        left: 40%;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: solid transparent;
+        border-bottom-color: white;
+        border-width: 10px;
+        background-clip: padding-box;
+        /* -webkit-box-shadow: 0px 7px 14px -9px rgb(0 0 0 / 80%);
+        box-shadow: 0px 7px 14px -9px rgb(0 0 0 / 80%);
+        -moz-box-shadow: 0px 7px 14px -9px rgb(0 0 0 / 80%);*/
+    }
+
+
+    nav ul li:hover ul li {
+        align-items: center;
+    }
+
+        nav ul li:hover ul li:hover {
+            cursor: pointer;
+            -webkit-box-shadow: 0px 7px 14px -9px rgb(0 0 0 / 80%);
+            box-shadow: 0px 7px 14px -9px rgb(0 0 0 / 80%);
+            -moz-box-shadow: 0px 7px 14px -9px rgb(0 0 0 / 80%);
+        }
+
+        nav ul li:hover ul li a {
+            text-decoration: none;
+        }
+
+h1 img {
+    width: 140px;
+    float: right;
+}
+
+nav {
+    background-color: white;
+}
+
+#profilePic {
+    float: left;
+}
+
+    #profilePic img {
+        width: 80px;
+    }
+
+body {
+    font-family: Assistant;
+    margin: 0 auto;
+}
+
+#container {
+    right: 2%;
+    /*margin: 0 auto;*/
+    margin-right: 19px;
+}
+
+h1{
+    font-size:28pt;
+    /*margin-right:19px;*/
+}
+
+p {
+    margin-top: 1.5%;
+    font-size: 14pt;
+}
+
+#eventBTN {
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+form {
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+
+input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+.opacity{
+    opacity:0.5;
+}
+
+.notopacity {
+    opacity: 1;
+}
+
+input[type=radio]:checked {
+    border-bottom: solid 6px black;
+  
+}
+
+
+
+#boyIMG, #girlIMG {
+    width: 48px;
+    margin-left: 2px;
+}
+
+
+
+
+input, button {
+    font-family: Assistant;
+}
+
+#letterArea {
+    font-family: Calibri;
+    /* position: absolute; */
+    font-size: 2.8vh;
+    /* margin-right: 204px; */
+    width: 52vw;
+    height: 52vh;
+    /* top: 46%; */
+    right: 25%;
+    /* max-width: fit-content; */
+    margin: 0 auto;
+    /* margin-top: 24%; */
+    display: block
+}
+
+
+#letterType {
+    display: none;
+}
+
+#letterTypeLBL {
+    display: none;
+}
+
+#createLetter {
+    margin-top: 32px;
+    margin-right: 45%;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+#downloadLetter {
+    margin-top: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 65%;
+}
+
+button {
+    margin-right: 10%;
+    background-size: 200px 150px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position-x: center;
+    width: 200px;
+    height: 150px;
+    padding-top: 154px;
+    border: none;
+    cursor: pointer;
+    margin-right: 19px;
+    margin-top: 3%;
+    font-size: 18pt;
+    margin-bottom: 8%;
+}
+
+#lettetvolFam {
+    background-image: url('../pics/3758757.jpg');
+}
+
+#lettetHoliday {
+    background-image: url('../pics/00-01.jpg');
+}
+
+/*#lettetOrgBoss {
+    background-image: url('../pics/20943959.jpg');
+}*/
+
+#lettetToVol {
+    background-image: url('../pics/43052.jpg');
+}
+
+#lettetBoss {
+    background-image: url('../pics/454.jpg');
+}
+
+.BTNstyle {
+    border: solid 3px #3F4C9B;
+    background-color: #3F4C9B;
+    color: white;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    padding: 2px 12px 2px 12px
+}
+
+    .BTNstyle:hover {
+        border: solid 3px #354083;
+        background-color: #354083;
+        color: white;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        padding: 2px 12px 2px 12px;
+        cursor: pointer;
+    }
+    .BTNstyle:active {
+        border: solid 3px #293265;
+        background-color: #293265;
+        color: white;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        padding: 2px 12px 2px 12px
+    }
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inline;
+}
+
+
+@media  (max-width: 765px) {
+
+    button {
+        background-size: 146px 155px;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-position-x: center;
+        width: 146px;
+        height: 102px;
+        border: none;
+        cursor: pointer;
+        margin-right: 19px;
+        font-size: 12pt;
+        position: relative;
+    }
+
+
+    #container {
+        right: 2%;
+        /*margin: 0 auto;*/
+        margin-right: 19px;
+    }
+
+    h1 {
+        font-size: 28pt;
+        /*margin-right:19px;*/
+    }
+
+    p {
+        margin-top: 1.5%;
+        font-size: 14pt;
+    }
+
+    #eventBTN {
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+
+    form {
+        display: block;
+    }
+    #familyName {
+        display: block;
+        width: 152px;
+    }
+    #toName {
+        display: block;
+        width: 152px;
+    }
+    #volName {
+        display: block;
+        width: 152px;
+    }
+
+
+    input[type=radio] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        cursor: pointer;
+    }
+
+    label {
+        cursor: pointer;
+        font-size: 14pt;
+    }
+
+    .opacity {
+        opacity: 0.5;
+    }
+
+    .notopacity {
+        opacity: 1;
+    }
+
+    input[type=radio]:checked {
+        border-bottom: solid 6px black;
+    }
+
+    input{
+        display:block;
+    }
+
+    #boyIMG, #girlIMG {
+        width: 48px;
+        margin-left: 2px;
+    }
+
+
+
+
+    input, button {
+        font-family: Assistant;
+    }
+
+    #letterArea {
+        font-family: Calibri;
+        /* position: absolute; */
+        font-size: 2.8vh;
+        /* margin-right: 204px; */
+        width: 52vw;
+        height: 52vh;
+        /* top: 46%; */
+        right: 25%;
+        /* max-width: fit-content; */
+        margin: 0 auto;
+        /* margin-top: 24%; */
+        display: block
+    }
+
+
+
+#letterTypeLBL {
+    display: none;
+}
+
+#createLetter {
+    margin-top: 32px;
+    margin-right: 45%;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+#downloadLetter {
+    margin-top: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 65%;
+}
+
+    .BTNstyle {
+        border: solid 3px #3F4C9B;
+        background-color: #3F4C9B;
+        color: white;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        padding: 2px 12px 2px 12px
+    }
+
+        .BTNstyle:hover {
+            border: solid 3px #354083;
+            background-color: #354083;
+            color: white;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+            padding: 2px 12px 2px 12px;
+            cursor: pointer;
+        }
+
+        .BTNstyle:active {
+            border: solid 3px #293265;
+            background-color: #293265;
+            color: white;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+            padding: 2px 12px 2px 12px
+        }
+}
+
