@@ -110,9 +110,11 @@ nav {
         width: 80px;
     }
 
+    /*-------------------------------------------------------*/
+
 body {
     font-family: Assistant;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 
 #container {
@@ -131,14 +133,13 @@ p {
     font-size: 14pt;
 }
 
-#eventBTN {
+/*#eventBTN {
     max-width: fit-content;
     margin: 0 auto;
-}
+}*/
 
 form {
-    max-width: fit-content;
-    margin: 0 auto;
+   width: 255px;
 }
 
 
@@ -152,6 +153,7 @@ input[type=radio] {
 }
 
 label {
+    display:block;
     cursor: pointer;
     font-size: 14pt;
 }
@@ -179,23 +181,57 @@ input[type=radio]:checked {
 
 
 
-input, button {
+input[type=text] {
+    display: block;
     font-family: Assistant;
+    /* border-bottom: solid 2px gray; */
+    border: none;
+    border-radius: 8px;
+    background-color: #F3F3F4;
+    height: 42px;
+    width: 235px;
+    margin-bottom: 6px;
+    font-size:12pt;
 }
 
+    input[type=text]:focus {
+        border-bottom: solid 2px #3F4C9B;
+        background-color: white;
+    }
+
+    input[type=text]:hover {
+        border: solid 1.5px #3F4C9B;
+        background-color: white;
+    }
+
+
+/*#letterAreaDiv {
+    position: relative;
+    float: left;
+    top: 81%;
+    right: 22%;*/
+    /*margin-top: -270px;*/
+    /* margin-right: 0; */
+    /*display: flex;*/
+    /*margin-right: 36px;
+}*/
+
 #letterArea {
-    font-family: Calibri;
+    font-family: Assistant;
     /* position: absolute; */
-    font-size: 2.8vh;
+    font-size: 13pt;
     /* margin-right: 204px; */
-    width: 52vw;
-    height: 52vh;
-    /* top: 46%; */
-    right: 25%;
+    width: 450px;
+    height: 400px;
     /* max-width: fit-content; */
     margin: 0 auto;
-    /* margin-top: 24%; */
-    display: block
+    /* margin-top: 24%;
+     display: block; */
+}
+
+#displayDiv {
+    display: flex;
+    /*justify-content: space-between;*/
 }
 
 
@@ -208,34 +244,41 @@ input, button {
 }
 
 #createLetter {
-    margin-top: 32px;
-    margin-right: 45%;
+    font-family:Assistant;
+    margin-top: 17px;
+    /*margin-right: 45%;*/
     margin-bottom: 10px;
-    font-size: 17px;
+    font-size: 22px;
+    padding: 5px 15px;
+}
+
+#errorNote{
+    color:red;
 }
 
 #downloadLetter {
-    margin-top: 20px;
+    margin-top: 10px;
     width: fit-content;
     height: fit-content;
-    margin-right: 65%;
+    margin-right: 504px;
 }
 
 button {
-    margin-right: 10%;
-    background-size: 200px 150px;
+    font-family: Assistant;
+    /* margin-right: 10%; */
+    background-size: 250px 200px;
     background-repeat: no-repeat;
     background-color: transparent;
     background-position-x: center;
-    width: 200px;
-    height: 150px;
-    padding-top: 154px;
+    width: 250px;
+    height: 200px;
+    padding-top: 200px;
     border: none;
     cursor: pointer;
-    margin-right: 19px;
+    margin-left: 70px;
     margin-top: 3%;
     font-size: 18pt;
-    margin-bottom: 8%;
+    margin-bottom: 60px;
 }
 
 #lettetvolFam {
@@ -288,36 +331,27 @@ button {
         padding: 2px 12px 2px 12px
     }
 
-.hidden {
+/*.hidden {
     display: none;
-}
+}*/
 
-.visible {
+/*.visible {
     display: inline;
-}
-
+}*/
+/************************************************************************************************/
 
 @media  (max-width: 765px) {
 
-    button {
-        background-size: 146px 155px;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        background-position-x: center;
-        width: 146px;
-        height: 102px;
-        border: none;
-        cursor: pointer;
-        margin-right: 19px;
-        font-size: 12pt;
-        position: relative;
+    body {
+        font-family: Assistant;
+        /*margin: 0 auto;*/
     }
-
 
     #container {
         right: 2%;
         /*margin: 0 auto;*/
         margin-right: 19px;
+        height:100%;
     }
 
     h1 {
@@ -330,25 +364,13 @@ button {
         font-size: 14pt;
     }
 
-    #eventBTN {
-        max-width: fit-content;
-        margin: 0 auto;
-    }
+    /*#eventBTN {
+    max-width: fit-content;
+    margin: 0 auto;
+}*/
 
     form {
-        display: block;
-    }
-    #familyName {
-        display: block;
-        width: 152px;
-    }
-    #toName {
-        display: block;
-        width: 152px;
-    }
-    #volName {
-        display: block;
-        width: 152px;
+        width: 255px;
     }
 
 
@@ -362,8 +384,9 @@ button {
     }
 
     label {
+        display: block;
         cursor: pointer;
-        font-size: 14pt;
+        font-size: 17pt;
     }
 
     .opacity {
@@ -378,9 +401,7 @@ button {
         border-bottom: solid 6px black;
     }
 
-    input{
-        display:block;
-    }
+
 
     #boyIMG, #girlIMG {
         width: 48px;
@@ -390,44 +411,129 @@ button {
 
 
 
-    input, button {
+    input[type=text] {
+        display: block;
         font-family: Assistant;
+        /* border-bottom: solid 2px gray; */
+        border: none;
+        border-radius: 8px;
+        background-color: #F3F3F4;
+        height: 42px;
+        width: 235px;
+        margin-bottom: 6px;
+        font-size: 12pt;
     }
+
+        input[type=text]:focus {
+            border-bottom: solid 2px #3F4C9B;
+            background-color: white;
+        }
+
+        input[type=text]:hover {
+            border: solid 1.5px #3F4C9B;
+            background-color: white;
+        }
+
+
+   /* #letterAreaDiv {
+        position: relative;
+    float: left;
+    top: 81%;
+    right: 22%;*/
+        /*margin-top: -270px;*/
+        /* margin-right: 0; */
+        /*display: flex;*/
+        /*margin-right: 36px;
+    }*/
 
     #letterArea {
-        font-family: Calibri;
+        font-family: Assistant;
         /* position: absolute; */
-        font-size: 2.8vh;
+        font-size: 15pt;
         /* margin-right: 204px; */
-        width: 52vw;
-        height: 52vh;
-        /* top: 46%; */
-        right: 25%;
+        width: 340px;
+        height: 500px;
         /* max-width: fit-content; */
         margin: 0 auto;
-        /* margin-top: 24%; */
-        display: block
+        /* margin-top: 24%;
+     display: block; */
+    }
+
+      #displayDiv {
+      display: block;
+        /*justify-content: space-between;
     }
 
 
+    #letterType {
+        display: none;
+    }
 
-#letterTypeLBL {
-    display: none;
-}
+    #letterTypeLBL {
+        display: none;
+    }
 
-#createLetter {
-    margin-top: 32px;
-    margin-right: 45%;
-    margin-bottom: 10px;
-    font-size: 17px;
-}
+    #createLetter {
+        font-family: Assistant;
+        margin-top: 17px;
+        /*margin-right: 45%;*/
+        margin-bottom: 10px;
+        font-size: 22px;
+        padding: 5px 15px;
+    }
 
-#downloadLetter {
-    margin-top: 20px;
-    width: fit-content;
-    height: fit-content;
-    margin-right: 65%;
-}
+    #downloadLetter {
+        margin-top: 10px;
+        width: 140px;
+        height: fit-content;
+        margin-right: 0px;
+    }
+
+    button {
+        font-family: Assistant;
+        font-size: 18pt;
+        margin-bottom: 60px;
+        background-size: 150px 200px;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-position-x: center;
+        width: 150px;
+        height: 100px;
+        padding-top: 200px;
+        border: none;
+        cursor: pointer;
+        margin-left: 70px;
+        margin-top: 3%;
+        font-size: 15pt;
+        margin-bottom: 70px;
+    }
+
+    #firstBtnDiv {
+        display: flex
+    }
+    #secondBtnDiv {
+        display: flex
+    }
+
+    #lettetvolFam {
+        background-image: url('../pics/3758757.jpg');
+    }
+
+    #lettetHoliday {
+        background-image: url('../pics/00-01.jpg');
+    }
+
+    /*#lettetOrgBoss {
+    background-image: url('../pics/20943959.jpg');
+}*/
+
+    #lettetToVol {
+        background-image: url('../pics/43052.jpg');
+    }
+
+    #lettetBoss {
+        background-image: url('../pics/454.jpg');
+    }
 
     .BTNstyle {
         border: solid 3px #3F4C9B;
@@ -459,5 +565,16 @@ button {
             border-radius: 7px;
             padding: 2px 12px 2px 12px
         }
+    #errorNote {
+        color: red;
+    }
+
+    /*.hidden {
+        display: none;
+    }
+
+    .visible {
+        display: inline;
+    }*/
 }
 
